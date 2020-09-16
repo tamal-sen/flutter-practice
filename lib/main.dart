@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/usecases/widgets/trip_type_tabbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Practice',
       theme: ThemeData(
+        fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -24,17 +26,11 @@ class HelloWorld extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hello World'),
-      ),
-      body: Container(
-        color: Colors.white,
-        alignment: Alignment.center,
-        child: Center(
-            child: Text(
-          'Hello World',
-          style: TextStyle(fontSize: 20),
-        )),
+      appBar: AppBar(title: 
+      Text('Tab Bar Demo'),),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: TripTypeTabBar(),
       ),
     );
   }
