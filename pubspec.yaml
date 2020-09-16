@@ -17,7 +17,18 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  
 flutter:
-
   uses-material-design: true
+
+  fonts:
+  - family: Poppins
+    fonts:
+      - asset: fonts/Poppins-Light.ttf
+        weight: 300
+      - asset: fonts/Poppins-Regular.ttf
+        weight: 400
+      - asset: fonts/Poppins-Medium.ttf
+        weight: 500
+      - asset: fonts/Poppins-Bold.ttf
+        weight: 700
