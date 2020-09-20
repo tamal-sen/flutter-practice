@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/usecases/widgets/trip_type_tabbar.dart';
+import 'package:flutter_practice/usecases/pages/landing_page.dart';
+import 'package:flutter_practice/usecases/widgets/airport_selection_widget.dart';
+// import 'package:flutter_practice/usecases/widgets/trip_type_tabbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,21 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HelloWorld(),
-    );
-  }
-}
-
-class HelloWorld extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: 
-      Text('Tab Bar Demo'),),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: TripTypeTabBar(),
-      ),
+      home: LandingPage(),
     );
   }
 }
